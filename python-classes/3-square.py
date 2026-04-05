@@ -1,22 +1,16 @@
 #!/usr/bin/python3
-"""
-3-square.py - Square class with area method
-
-This module defines a Square class with an area method.
-"""
+"""Defines a square by its size with area calculation."""
 
 
 class Square:
-    """
-    A class that defines a square with area calculation.
- 
+    """A square class with size and area calculation.
+
     Attributes:
-        __size (int): The private size of the square.
+        __size (int): The size of the square (private).
     """
 
     def __init__(self, size=0):
-        """
-        Initialize a Square.
+        """Initialize a square.
 
         Args:
             size (int): The size of the square. Defaults to 0.
@@ -32,10 +26,9 @@ class Square:
         self.__size = size
 
     def area(self):
-        """
-        Calculate the area of the square.
+        """Return the area of the square.
 
         Returns:
             int: The area of the square.
         """
-        return self.__size ** 2
+        return self.__size * self.__size

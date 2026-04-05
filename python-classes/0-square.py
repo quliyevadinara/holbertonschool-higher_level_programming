@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-"""
-0-square.py - Empty Square class
-
-This module defines an empty Square class.
-"""
+"""Defines an empty square class."""
 
 
 class Square:
-    """
-    An empty class that defines a square.
+    """An empty square class.
 
-    This is the foundation for progressive Square class implementations.
+    This class defines a square with no attributes or methods.
     """
     pass
