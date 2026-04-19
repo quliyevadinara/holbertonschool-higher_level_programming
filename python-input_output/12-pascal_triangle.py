@@ -4,13 +4,15 @@
 
 def pascal_triangle(n):
     """
-    Returns a list of lists of integers representing the Pascal's triangle of n.
+    Returns a list of lists of integers representing the Pascal's triangle
+    of n.
 
     Args:
         n (int): The number of rows in Pascal's triangle.
 
     Returns:
-        list: A list of lists representing Pascal's triangle, or an empty list if n <= 0.
+        list: A list of lists representing Pascal's triangle, or an empty
+        list if n <= 0.
     """
     if n <= 0:
         return []
