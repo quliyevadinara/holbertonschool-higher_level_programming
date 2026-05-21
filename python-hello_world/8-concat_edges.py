@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-word = "Holberton"
-print(word[3:] + word[:2] + word[5:] + " with " + word)
+str = "Holberton School"
+
+str = str + str[:9]
+
+print(str)
