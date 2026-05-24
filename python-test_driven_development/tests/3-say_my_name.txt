@@ -1,0 +1,28 @@
+===========================
+How to use 3-say_my_name.py
+===========================
+
+Import function:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test full name:
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+Test first name only:
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+Test invalid first_name:
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Test invalid last_name:
+    >>> say_my_name("John", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+Test both strings:
+    >>> say_my_name("Walter", "White")
+    My name is Walter White
