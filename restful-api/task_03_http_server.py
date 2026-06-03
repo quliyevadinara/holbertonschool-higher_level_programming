@@ -3,6 +3,7 @@
 Task 03 - Develop a simple API using Python's http.server
 Python 3.9
 """
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
@@ -17,7 +18,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
     def _send_json(self, status_code, obj):
         payload = json.dumps(obj)
         self.send_response(status_code)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Type", "application/json")
         self.end_headers()
         self.wfile.write(payload.encode("utf-8"))
 
