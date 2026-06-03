@@ -2,6 +2,7 @@
 """
 Module for Shape abstract class and its implementations.
 """
+
 from abc import ABC, abstractmethod
 import math
 
@@ -24,21 +25,15 @@ class Circle(Shape):
     """Circle class implementing Shape abstract methods."""
 
     def __init__(self, radius):
-        """
-        Initialize a Circle with a radius.
-
-        Args:
-            radius: The radius of the circle.
-        """
         self.radius = radius
 
     def area(self):
         """Calculate the area of the circle."""
-        return math.pi * self.radius ** 2
+        return math.pi * abs(self.radius) ** 2
 
     def perimeter(self):
         """Calculate the perimeter (circumference) of the circle."""
-        return 2 * math.pi * self.radius
+        return 2 * math.pi * abs(self.radius)
 
 
 class Rectangle(Shape):
